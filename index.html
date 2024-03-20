@@ -8,21 +8,24 @@
 </head>
 <script>
     $(document).ready(function(){
-        $("#btn").click(function(){
+            var button = $("<button></button>").text("Click me");
+            $(button).appendTo("#container");
+             
+        $("button").click(function(){
             $("div").css({"background-color": "green"});
 
         })
-    })
+            })
 </script>
 <style>
     
-    .container{
+    #container{
         
         height: 200px;
         width: 200px;
         text-align: center;
     }
-    .container button{
+    #container button{
         border-radius: 3px;
         border: none;
         color: white;
@@ -35,8 +38,6 @@
     }
 </style>
 <body>
-    <div class="container">
-        <button id="btn">click me</button>
-    </div>
+    <div id="container"></div>
 </body>
 </html>

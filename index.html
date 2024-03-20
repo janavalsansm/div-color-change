@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("div").css({"background-color": "red"});
+
+        })
+    })
+</script>
+<style>
+    .backclr{
+        background-color: red;
+    }
+    .container{
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+        text-align: center;
+    }
+    .container button{
+        border-radius: 3px;
+        border: none;
+        color: white;
+        background-color: black;
+        width: 100px;
+        height: 30px;
+        font-size: large;
+
+
+    }
+</style>
+<body>
+    <div class="container">
+        <button id="btn">click me</button>
+    </div>
+</body>
+</html>
